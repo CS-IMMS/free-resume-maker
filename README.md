@@ -1,4 +1,4 @@
-# 🚀 Free Resume Maker
+# 🚀 
 
 ### A modern, AI-powered, ATS-optimized resume builder featuring professionally designed templates and smart content suggestions.
 

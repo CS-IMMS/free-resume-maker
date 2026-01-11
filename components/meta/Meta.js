@@ -31,7 +31,7 @@ export default function Meta({ title, keywords, description }) {
                 "memberOf": "Oensource",
                 "owns": "HOT HEAD",
                 "publishingPrinciples": ${homepage},
-                "slogan": "free resume maker for humanity"
+                "slogan": " for humanity"
             }`
         }
     }

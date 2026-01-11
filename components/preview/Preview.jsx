@@ -1,25 +1,24 @@
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import { CgWebsite } from "react-icons/cg";
 import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
   FaExchangeAlt,
   FaExternalLinkAlt,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
 } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
-import { CgWebsite } from "react-icons/cg";
-import Skills from "./Skills";
-import DateRange from "../utility/DateRange";
-import ContactInfo from "./ContactInfo";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useContext, useState, useEffect } from "react";
 import { ResumeContext } from "../../pages/builder";
-import dynamic from "next/dynamic";
-import Language from "./Language";
+import DateRange from "../utility/DateRange";
 import Certification from "./Certification";
+import ContactInfo from "./ContactInfo";
+import Language from "./Language";
+import Skills from "./Skills";
 import TemplateTwo from "./TemplateTwo";
 
 const DragDropContext = dynamic(
@@ -46,11 +45,11 @@ const Draggable = dynamic(
 
 const Preview = () => {
   const { resumeData, setResumeData } = useContext(ResumeContext);
-  const [currentTemplate, setCurrentTemplate] = useState("template1");
+  const [currentTemplate, setCurrentTemplate] = useState("template2");
   
   // Initialize sectionOrder with all sections including certifications
   const defaultSections = [
-    "summary",
+    "Bio",
     "education",
     "projects",
     "experience",
@@ -211,7 +210,7 @@ const Preview = () => {
                   {resumeData.summary.length > 0 && (
                     <div className="mb-1">
                       <h2 className="section-title mb-1 border-b-2 border-gray-300">
-                        Summary
+                        Bio
                       </h2>
                       <p className="content break-words">{resumeData.summary}</p>
                     </div>

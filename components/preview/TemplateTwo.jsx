@@ -1,10 +1,7 @@
-import React from "react";
-import ContactInfo from "./ContactInfo";
-import Link from "next/link";
-import { FaExternalLinkAlt, FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { CgWebsite } from "react-icons/cg";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import Certification from "./Certification";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import ContactInfo from "./ContactInfo";
 
 const TemplateTwo = ({ 
   namedata, 
@@ -29,13 +26,13 @@ const TemplateTwo = ({
 }) => {
 
   const sections = [
-    { id: "summary", title: "Summary", content: summarydata },
-    { id: "education", title: "Education", content: educationdata },
-    { id: "projects", title: "Projects", content: projectsdata },
-    { id: "experience", title: "Work Experience", content: workExperiencedata },
-    { id: "skills", title: "Technical Skills", content: skillsdata },
+    { id: "summary", title: "Bio", content: summarydata },
+    { id: "education", title: "Formations", content: educationdata },
+    { id: "projects", title: "Projets", content: projectsdata },
+    { id: "experience", title: "Expériences", content: workExperiencedata },
+    { id: "skills", title: "Compétences techniques", content: skillsdata },
     { id: "softskills", title: "Soft Skills", content: skillsdata.find(skill => skill.title === "Soft Skills")?.skills || [] },
-    { id: "languages", title: "Languages", content: languagesdata },
+    { id: "languages", title: "Langues", content: languagesdata },
     { id: "certifications", title: "Certifications", content: certificationsdata }
   ];
 
@@ -64,14 +61,14 @@ const TemplateTwo = ({
       case "summary":
         return (
           <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Summary</h2>
+            <h2 className="section-title border-b-2 border-gray-300 mb-1">Bio</h2>
             <p className="content">{summarydata}</p>
           </div>
         );
       case "education":
         return (
           <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Education</h2>
+            <h2 className="section-title border-b-2 border-gray-300 mb-1">Formations</h2>
             {educationdata.map((edu, idx) => (
               <div key={idx} className="mb-1">
                 <p className="content font-semibold">{edu.school}</p>
@@ -83,63 +80,63 @@ const TemplateTwo = ({
             ))}
           </div>
         );
-      case "projects":
-        return (
-          <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Projects</h2>
-            <Droppable droppableId="projects" type="PROJECTS">
-              {(provided) => (
-                <div {...provided.droppableProps} ref={provided.innerRef}>
-                  {projectsdata.map((project, idx) => (
-                    <Draggable key={project.name + idx} draggableId={`project-${idx}`} index={idx}>
-                      {(provided, snapshot) => (
-                        <div
-                          ref={provided.innerRef}
-                          {...provided.draggableProps}
-                          {...provided.dragHandleProps}
-                          className={`mb-2 ${snapshot.isDragging ? "bg-gray-50" : ""}`}
-                        >
-                          <div className="flex justify-between items-center">
-                            <div className="flex items-center gap-2">
-                              <p className="content i-bold">{project.name}</p>
-                              {project.link && (
-                                <Link
-                                  href={project.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-blue-600 hover:text-blue-800"
-                                  title={project.link}
-                                >
-                                  <FaExternalLinkAlt size={12} />
-                                </Link>
-                              )}
-                            </div>
-                            <p className="sub-content font-medium text-gray-600">
-                              {new Date(project.startYear).getFullYear()} - {new Date(project.endYear).getFullYear()}
-                            </p>
-                          </div>
-                          <p className="content">{project.description}</p>
-                          {project.keyAchievements && (
-                            <ul className="list-disc pl-4 content">
-                              {project.keyAchievements.split('\n').map((achievement, i) => (
-                                <li key={i} className="content">{achievement}</li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      )}
-                    </Draggable>
-                  ))}
-                  {provided.placeholder}
-                </div>
-              )}
-            </Droppable>
-          </div>
-        );
+      // case "projects":
+      //   return (
+      //     <div>
+      //       <h2 className="section-title border-b-2 border-gray-300 mb-1">Projects</h2>
+      //       <Droppable droppableId="projects" type="PROJECTS">
+      //         {(provided) => (
+      //           <div {...provided.droppableProps} ref={provided.innerRef}>
+      //             {projectsdata.map((project, idx) => (
+      //               <Draggable key={project.name + idx} draggableId={`project-${idx}`} index={idx}>
+      //                 {(provided, snapshot) => (
+      //                   <div
+      //                     ref={provided.innerRef}
+      //                     {...provided.draggableProps}
+      //                     {...provided.dragHandleProps}
+      //                     className={`mb-2 ${snapshot.isDragging ? "bg-gray-50" : ""}`}
+      //                   >
+      //                     <div className="flex justify-between items-center">
+      //                       <div className="flex items-center gap-2">
+      //                         <p className="content i-bold">{project.name}</p>
+      //                         {project.link && (
+      //                           <Link
+      //                             href={project.link}
+      //                             target="_blank"
+      //                             rel="noopener noreferrer"
+      //                             className="text-blue-600 hover:text-blue-800"
+      //                             title={project.link}
+      //                           >
+      //                             <FaExternalLinkAlt size={12} />
+      //                           </Link>
+      //                         )}
+      //                       </div>
+      //                       <p className="sub-content font-medium text-gray-600">
+      //                         {new Date(project.startYear).getFullYear()} - {new Date(project.endYear).getFullYear()}
+      //                       </p>
+      //                     </div>
+      //                     <p className="content">{project.description}</p>
+      //                     {project.keyAchievements && (
+      //                       <ul className="list-disc pl-4 content">
+      //                         {project.keyAchievements.split('\n').map((achievement, i) => (
+      //                           <li key={i} className="content">{achievement}</li>
+      //                         ))}
+      //                       </ul>
+      //                     )}
+      //                   </div>
+      //                 )}
+      //               </Draggable>
+      //             ))}
+      //             {provided.placeholder}
+      //           </div>
+      //         )}
+      //       </Droppable>
+      //     </div>
+      //   );
       case "experience":
         return (
           <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Work Experience</h2>
+            <h2 className="section-title border-b-2 border-gray-300 mb-1">Expériences</h2>
             <Droppable droppableId="work-experience" type="WORK_EXPERIENCE">
               {(provided) => (
                 <div {...provided.droppableProps} ref={provided.innerRef}>
@@ -159,7 +156,7 @@ const TemplateTwo = ({
                               <span>{work.position}</span>
                             </p>
                             <p className="sub-content font-medium text-gray-600">
-                              {new Date(work.startYear).getFullYear()} - {new Date(work.endYear).getFullYear()}
+                              {work.startYear} - {work.endYear}
                             </p>
                           </div>
                           <p className="content">{work.description}</p>
@@ -177,7 +174,7 @@ const TemplateTwo = ({
       case "skills":
         return (
           <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Technical Skills</h2>
+            <h2 className="section-title border-b-2 border-gray-300 mb-1">Compétences techniques</h2>
             <p className="content">
               {skillsdata.find(skill => skill.title === "Technical Skills")?.skills.join(", ")}
             </p>
@@ -186,7 +183,7 @@ const TemplateTwo = ({
       case "softskills":
         return (
           <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Soft Skills</h2>
+            <h2 className="section-title border-b-2 border-gray-300 mb-1">Compétences comportementales</h2>
             <p className="content">
               {section.content.join(", ")}
             </p>
@@ -195,7 +192,7 @@ const TemplateTwo = ({
       case "languages":
         return (
           <div>
-            <h2 className="section-title border-b-2 border-gray-300 mb-1">Languages</h2>
+            <h2 className="section-title border-b-2 border-gray-300 mb-1">Langues</h2>
             <p className="content">
               {section.content.join(", ")}
             </p>

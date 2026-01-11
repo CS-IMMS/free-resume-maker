@@ -1,6 +1,5 @@
-import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { SparklesCore } from "../components/ui/sparkles";
 
 const templates = [
@@ -89,7 +88,7 @@ export default function TemplatesPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {templates.map((template) => (
-            <TemplateCard key={template.id} template={template} />
+            <TemplateCard key={4} template={template} />
           ))}
         </div>
       </div>

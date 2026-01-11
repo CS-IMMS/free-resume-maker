@@ -1,0 +1,191 @@
+{
+    "name": "Mahamadou Moussa Ismaël",
+    "position": "Développeur Full Stack & DevOps / Cloud",
+    "contactInformation": "+22796900473",
+    "email": "maitre.imms@gmail.com",
+    "address": "Niamey, Niger",
+    "profilePicture": "",
+    "socialMedia": [
+        {
+            "socialMedia": "Github",
+            "link": "http://github.com/CS-IMMS/"
+        },
+        {
+            "socialMedia": "LinkedIn",
+            "link": "www.linkedin.com/in/mahamadou-moussa-ismael-516798252"
+        },
+        {
+            "socialMedia": "Website",
+            "link": "https://sahelcoders.com/"
+        }
+    ],
+    "summary": "Full Stack Product Developer orienté DevOps & Cloud avec plus de 3 ans d’expérience en e-santé et projets publics. Je conçois et livre des APIs et interfaces robustes en automatisant les pipelines CI/CD (Azure DevOps, GitHub Actions), en containerisant et orchestrant les services (Docker → ECS/EC2) et en optimisant la distribution via CloudFront/S3. J’utilise IaC (Terraform/CloudFormation, Biceps), monitoring/observability et stratégies de release sûres (blue/green, canary) pour garantir disponibilité et rapidité. Fort d’une pratique Agile ancrée (XP : TDD, pair-programming, réfactoring continu, revues de code), je maîtrise l’ensemble du cycle de vie d’une application web & mobile — de la spécification et planification itérative au build, tests (unitaires, intégration, E2E), publication (CI mobile, code-signing, déploiement store/OTA) et exploitation.",
+    "education": [
+        {
+            "school": "CodeLoccol (Niamey, Niger)",
+            "degree": "Formation intensive en développement web full stack (MERN) & mobile hybride",
+            "startYear": "2022",
+            "endYear": "2023"
+        },
+        {
+            "school": "Nanodegree Développeur Full Stack (Udacity / ALX-T)",
+            "degree": "Nanodegree — Python, Flask, bases relationnelles, Docker, CI/CD",
+            "startYear": "2022",
+            "endYear": "2022"
+        },
+        {
+            "school": "Stanford Medicine — Department of Genetics",
+            "degree": "Certificate: Fundamentals of Data Science in Precision Medicine and Cloud Computing.",
+            "startYear": "2025",
+            "endYear": "2025"
+        }
+    ],
+    "workExperience": [
+        {
+            "company": "Bennu Technologie Lomé (Togo)",
+            "position": "Développeur Full Stack — DevOps & Cloud",
+            "description": "Responsable du développement, du déploiement et de l'exploitation des applications de la solution Zovu au sein d'une équipe Agile. Conception et optimisation des services backend (NestJS) et des fonctions serverless (Azure Functions), développement frontend avec Angular (TypeScript) et industrialisation de la chaîne de livraison pour les environnement(DEV,QA,STG et PROD). Mise en place et gestion de pipelines CI/CD (Azure DevOps, GitHub Actions), containerisation Docker et orchestrations/déploiements multi-cloud (AWS ECS/EC2, Azure Asp). Utilisation d'Infrastructure as Code (Terraform / CloudFormation et Biceps), et implémentation de stratégies de release (blue/green, canary). Supervision du monitoring et de l'observabilité (Azure AppInsight, CloudWatch), automatisation des tests (unitaires, intégration, E2E) et collaboration étroite avec QA/ops pour garantir disponibilité, scalabilité, sécurité et capacité de rollback automatisé.",
+            "keyAchievements": "Industrialisation des pipelines CI/CD (Azure DevOps & GitHub Actions) et containerisation Docker, réduisant les temps de déploiement d'environ 40 %; déploiement et exploitation de microservices sur AWS (ECS/EC2) et Azure Functions via IaC (Terraform/CloudFormation); mise en place d'un monitoring centralisé et de stratégies de release (blue/green/canary) permettant des rollbacks sûrs; automatisation des tests et intégration continue améliorant significativement la fiabilité des livraisons; renforcement de la sécurité applicative (Auth0/JWT, contrôle d'accès, gestion centralisée des secrets).",
+            "startYear": "2023",
+            "endYear": "2025"
+        },
+        {
+            "company": "Sahel Codeurs",
+            "position": "Développeur Full Stack & Mobile Hybride — DevOps / Cloud (Second chef d'équipe)",
+            "description": "Responsable du développement, du déploiement et de l’industrialisation de plateformes web et mobiles pour des clients publics et privés. Conception et maintenance d’APIs scalables (Nest.js, Express) et d’applications mobiles hybrides (React Native). Mise en place et automatisation de pipelines CI/CD (Azure DevOps, GitHub Actions), containerisation Docker et déploiement multi-cloud (AWS ECS/EC2, Azure App Services / Functions). Gestion centralisée des secrets (AWS Secrets Manager / Azure Key Vault), et implémentation d’observabilité (CloudWatch, Prometheus/Grafana). Pratiques Agile/XP (TDD, pair programming, revues de code, planning itératif) pour maîtriser l’ensemble du cycle de vie des applications web & mobile — de la spécification à la production.",
+            "keyAchievements": "Encadrement et montée en compétence d’une équipe de 10 développeurs tout en industrialisant les livraisons (CI/CD mobile & web) ; déploiement de microservices conteneurisés sur AWS/Azure via IaC ; mise en place d’un monitoring centralisé et de runbooks permettant une meilleure détection et résolution des incidents en production ; intégration de workflows de sécurité (Auth0/JWT, ACL) et automatisation des tests (unitaires, intégration, E2E) pour augmenter la fiabilité des livraisons.",
+            "startYear": "2022",
+            "endYear": "presents"
+        },
+        {
+            "company": "Africa Ycone SARL",
+            "position": "Développeur Full Stack",
+            "description": "Participation au développement d'une API robuste en Nest.js, PostgreSQL et Firebase. Ajout de fonctionnalités, rédaction de tests unitaires (Jest), intégration frontend (Next.js, Tailwind CSS) et gestion des notifications via Firebase.",
+            "keyAchievements": "Intégration API-frontend et mise en place de tests unitaires pour améliorer la fiabilité.",
+            "startYear": "2022",
+            "endYear": "2023"
+        },
+        {
+            "company": "Yayimake SARL",
+            "position": "Développeur Full Stack web & mobile hybride",
+            "description": " J'ai rejoint la startup Yayimake après un stage de 6 semaines en développement web full stack (Node.js, Next.js, Nest.js, React.js, PostgreSQL, Prisma, Agile) dans le secteur de la santé. Mon rôle consiste à concevoir des solutions innovantes adaptées au contexte nigérien pour améliorer les conditions de vie. En mettant à profit mes compétences techniques, j'ai contribué à développer des outils et services répondant aux besoins de la population, participant activement à l'essor de Yayimake dans le secteur de la santé au Niger et en Afrique.",
+            "keyAchievements": "Contributions au développement d'outils et services pour le secteur santé locale.",
+            "startYear": "2022",
+            "endYear": "2023"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Plateforme de gestion des volontaires (Sahel Codeurs)",
+            "description": "Plateforme web pour la gestion des volontaires au Niger, développée dans le cadre des activités de Sahel Codeurs.",
+            "keyAchievements": "Mise en production de la plateforme et collaboration inter-équipes.",
+            "startYear": "2022",
+            "endYear": "2023",
+            "link": "https://sahelcoders.com/"
+        },
+        {
+            "name": "Dossier médical patient (en cours)",
+            "description": "Contribution au développement d'un dossier médical patient conforme aux normes (projet en cours avec Sahel Codeurs).",
+            "keyAchievements": "Participation à la conception des modèles de données et des APIs backend.",
+            "startYear": "2023",
+            "endYear": "2024"
+        }
+    ],
+    "skills": [
+        {
+            "title": "Technical Skills",
+            "skills": [
+                "JavaScript (ES6+)",
+                "TypeScript",
+                "React",
+                "Next.js",
+                "Angular",
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "Node.js",
+                "Nest.js",
+                "Express.js",
+                "Python",
+                "Flask",
+                "React Native",
+                "Databases: PostgreSQL",
+                "Databases: MongoDB",
+                "Redis",
+                "Prisma",
+                "Firebase",
+                "Linux / Bash",
+                "Git",
+                "GitHub",
+                "GitLab",
+                "GitHub Actions",
+                "Azure DevOps",
+                "CI/CD",
+                "Docker",
+                "Kubernetes",
+                "AWS (Amazon Web Services)",
+                "AWS ECS",
+                "AWS EC2",
+                "AWS Lambda",
+                "AWS S3",
+                "AWS CloudFront",
+                "Azure Functions",
+                "Infrastructure as Code (Terraform, Biceps)",
+                "CloudFormation",
+                "IaC (general)",
+                "Monitoring / Observability (CloudWatch, Azure Monitor, Prometheus, Grafana)",
+                "Logging / ELK",
+                "Testing: Jest",
+                "Testing: Cypress / E2E",
+                "TDD / Automated Testing",
+                "Security: Auth0 / JWT / OAuth2",
+                "Secrets Management (AWS Secrets Manager, Azure Key Vault)",
+                "Release strategies (blue/green, canary)",
+                "Containerization & Orchestration",
+                "Performance optimization",
+                "DevOps practices (CI, CD, IaC, monitoring, runbooks)"
+            ]
+        },
+        {
+            "title": "Soft Skills",
+            "skills": [
+                "DevOps (CI/CD)",
+                "Conception d'API REST",
+                "Tests unitaires (Jest)",
+                "IaC (Terraform, CloudFormation, Biceps)",
+                "Collaboration en équipe agile"
+            ]
+        },
+        {
+            "title": "Soft skills",
+            "skills": [
+                "Collaboration",
+                "Résolution de problèmes",
+                "Communication",
+                "Autonomie",
+                "Gestion du temps",
+                "Adaptabilité",
+                "Autodidacte"
+            ]
+        }
+    ],
+    "languages": [
+        "Anglais",
+        "Français",
+        "Haoussa"
+    ],
+    "certifications": [
+        {
+            "name": "Développeur Full Stack & Mobile Hybride",
+            "issuer": "CodeLoccol (Niamey, Niger)"
+        },
+        {
+            "name": "Développeur Web Full Stack",
+            "issuer": "ALX-T / Udacity"
+        },
+        {
+            "name": "Stanford Medicine — Department of Genetics",
+            "issuer": "Certificate: Fundamentals of Data Science in Precision Medicine and Cloud Computing"
+        }
+    ]
+}

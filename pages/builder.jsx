@@ -61,8 +61,8 @@ export default function Builder(props) {
         }}
       >
         <Meta
-          title="Free Resume Maker"
-          description="free resume maker for humanity."
+          title=""
+          description=" for humanity."
           keywords="ATS-friendly, Resume optimization, Keyword-rich resume, ATS resume builder, ATS resume templates, ATS-compliant resume, ATS-optimized CV, ATS-friendly format, ATS resume tips, Resume writing services, Career guidance, Job search in India, Resume tips for India, Professional resume builder, Cover letter writing, Interview preparation, Job interview tips, Career growth, Online job applications, resume builder, free resume builder, resume ats, best free resume builder, resume creator, resume cv, resume design, resume editor, resume maker"
         />
         <div className="f-col gap-4 md:flex-row justify-evenly max-w-full md:mx-auto md:h-screen">

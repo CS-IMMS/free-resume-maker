@@ -42,7 +42,7 @@ export default function Hero() {
             </div>
             
             <h1 className={`${spaceGrotesk.className} md:text-8xl text-4xl lg:text-7xl font-bold text-center text-white relative z-20 tracking-tighter`}>
-                Free Resume Maker
+                
             </h1>
 
             <div className={`${spaceGrotesk.className} text-center text-slate-500 text-xl mt-4 relative z-20`}>
